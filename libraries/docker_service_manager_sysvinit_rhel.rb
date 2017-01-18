@@ -52,6 +52,7 @@ module DockerCookbook
           mode '0755'
           variables(
             docker_name: docker_name,
+            docker_daemon: docker_daemon,
             docker_daemon_arg: docker_daemon_arg,
             docker_wait_ready: "#{libexec_dir}/#{docker_name}-wait-ready"
           )
